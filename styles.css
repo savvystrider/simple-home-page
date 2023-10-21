@@ -6,9 +6,77 @@ body {
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
+    background-color: #F2F9FE;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+nav {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 4em 0 4em;
+    text-align: center;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(200%);
+    transition: all .2s ease-in;
+}
+
+nav ul.active {
+    position: fixed;
+    visibility: unset;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 60px;
+    color: #909193;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.about-link {
+    color: #111729;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#close-btn {
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+header {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
