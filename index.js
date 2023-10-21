@@ -7,10 +7,12 @@ menuToggleBtn.addEventListener("click", function () {
     navMenu.classList.remove("active");
     navMenu.setAttribute("aria-expanded", false);
     menuToggleBtn.style.display = "none";
+    document.body.style.overflowY = "unset";
   } else {
     navMenu.classList.add("active");
     navMenu.setAttribute("aria-expanded", true);
     menuToggleBtn.style.display = "block";
+    document.body.style.overflowY = "hidden";
   }
 });
 

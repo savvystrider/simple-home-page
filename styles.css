@@ -55,6 +55,47 @@ nav a {
     line-height: 1.5;
 }
 
+.checkbox-toggle {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+
+.checkbox-toggle img {
+    z-index: 1;
+}
+
+.sun {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+
+.checkbox-toggle + label {
+    cursor: pointer;
+    display: block;
+    width: 2.4em;
+    position: relative;
+}
+
+.checkbox-toggle + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background-color: #111729;
+    border-radius: 1em;
+    margin-right: .5em;
+    z-index: -1;
+    transition: background-color 200ms ease-in-out;
+}
+
 .about-link {
     color: #111729;
 }
