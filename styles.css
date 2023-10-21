@@ -229,3 +229,14 @@ header {
         margin-inline: auto;
     }
 }
+
+@media screen and (min-width: 80rem) {
+    .hero {
+        display: flex;
+        gap: 8em;
+    }
+
+    .hero-text {
+        order: -1;
+    }
+}
