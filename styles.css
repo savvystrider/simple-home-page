@@ -78,7 +78,7 @@ p {
 }
 
 h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     color: #111729;
     margin-bottom: 0.5em;
 }
@@ -233,6 +233,10 @@ header {
     .hero {
         max-width: 70%;
         margin-inline: auto;
+    }
+
+    h1 {
+        font-size: 3.75rem;
     }
 }
 
